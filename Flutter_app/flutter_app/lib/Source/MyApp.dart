@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: "This is first app",
-      home: new MainPage(),
+      home: new MainPageLogin(),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'HomePage.dart';
 import 'package:flutter_app/Source/Blocs/login_bloc.dart';
 
-class MainPageStage extends State<MainPage> {
+class MainPageStage extends State<MainPageLogin> {
   var title = '';
   final _tf_email = TextEditingController();
   final _tf_pass = TextEditingController();
@@ -86,15 +86,12 @@ class MainPageStage extends State<MainPage> {
 
     return new Scaffold(
       resizeToAvoidBottomInset: false,
-      appBar: new AppBar(
-        title: Text("Drawer Menu"),
-      ),
       body: _doLayoutBody(context),
     );
   }
 }
 
-class MainPage extends StatefulWidget {
+class MainPageLogin extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
